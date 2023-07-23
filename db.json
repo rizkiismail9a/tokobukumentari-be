@@ -1,145 +1,147 @@
-[
-  {
-    "title": "Berani Tidak Disukai",
-    "writer": "Ichiro Kishimi & Fumatake Koga",
-    "publisher": "Gramedia Pustaka Utama",
-    "year": "2019",
-    "cetagory": "Pengembangan Diri, Filsafat, Psikologi",
-    "price": 87000,
-    "about": "Membaca buku ini bisa mengubah hidup anda. jutaan orang sudah menarik manfaat darinya. sekarang giliran anda",
-    "comments": ["gg geming"],
-    "file": "berani.png"
-  },
-  {
-    "title": "Campbell Biology",
-    "writer": "Neil A. Campbell",
-    "publisher": "Rajawali Pers",
-    "year": "2010",
-    "cetagory": "Akademik, Biologi",
-    "price": 250000,
-    "about": "Neil Allison Campbell adalah seorang ilmuwan Amerika Serikat dan juga penulis buku di bidang mata pelajaran biologi untuk tingkat atas",
-    "comments": ["Pusing aing bacanya"],
-    "file": "biologi.jpg"
-  },
-  {
-    "title": "Calculus: An Intuitive and Physical Approach",
-    "writer": "Morris Kline",
-    "publisher": "Dover Publisher",
-    "year": "1998",
-    "cetagory": "Akademik, Matematika",
-    "price": 187000,
-    "about": "",
-    "comments": ["Aku dimana????"],
-    "file": "calculus.jpg"
-  },
-  {
-    "title": "Dunia Sophie",
-    "writer": "Jostein Gaarder",
-    "publisher": "Mizan",
-    "year": "1996",
-    "cetagory": "Pengembangan Diri, Filsafat, Psikologi, Novel",
-    "price": 13000,
-    "about": "Dunia Sophie adalah sebuah novel karya Jostein Gaarder, diterbitkan di Indonesia oleh Penerbit Mizan tahun 1996. Aslinya ditulis dalam bahasa Norwegia, tetapi sudah diterjemahkan kedalam limapuluhtiga bahasa, termasuk bahasa Indonesia",
-    "comments": ["Apakah Sokrates makan dengan tangan kiri?"],
-    "file": "duniashopie.jpg"
-  },
-  {
-    "title": "Fundamentals of Physics",
-    "writer": "David Halliday, Jearl Walker, Robert Resnick",
-    "publisher": "New York Times",
-    "year": "2004",
-    "cetagory": "Akademik, Fisika",
-    "price": 147000,
-    "about": "",
-    "comments": ["Andai Newton duduk di bawah pohon duren"],
-    "file": "fisika.jpg"
-  },
-  {
-    "title": "Jujutsu Kaisen Vol. 5",
-    "writer": "Gege Akutami",
-    "publisher": "Elex Media Komputindo",
-    "year": "2019",
-    "cetagory": "Manga, Komik, Fiksi",
-    "price": 58000,
-    "about": "Program pertukaran dengan Akademi Jujutsu Kyoto dimulai. Pihak yang duluan menyingkirkan jurei tingkat 2 di area pertandinganlah yang akan jadi pemenangnya. Todo yang gemar berkelahi segera menyerang pihak Tokyo.",
-    "comments": ["Kapan lanjutannya??", "Seru parah!"],
-    "file": "jjk5.jpg"
-  },
-  {
-    "title": "Burung-burung Manyar",
-    "writer": "Y.B. Mangunwijaya",
-    "publisher": "Djambatan",
-    "year": "1981",
-    "cetagory": "Novel, Fiksi, Sejarah",
-    "price": 79000,
-    "about": "Burung-burung Manyar adalah novel karangan Y.B. Mangunwijaya. Novel ini terbit pertama kali pada tahun 1981. Sampai tahun 2007 Burung-burung Manyar telah terbit sebanyak 15 kali. Novel Burung-burung Manyar merupakan novel sejarah. Sejarah yang termuat dalam novel ini adalah sejarah Indonesia dari tahun 1934-1978.",
-    "comments": ["Pengin nangis habis baca ini 😭😭"],
-    "file": "manyar.jpg"
-  },
-  {
-    "title": "Melangkah",
-    "writer": "J. S. Khairen",
-    "publisher": "Grasindo",
-    "year": "2020",
-    "cetagory": "Novel, Fiksi",
-    "price": 98000,
-    "about": "Listrik padam di seluruh Jawa dan Bali secara misterius! Ancaman nyata kekuatan baru yang hendak menaklukkan Nusantara. Saat yang sama, empat sahabat mendarat di Sumba, hanya untuk mendapati nasib ratusan juta manusia ada di tangan mereka!",
-    "comments": [],
-    "file": "melangkah.jpg"
-  },
-  {
-    "title": "Moonfleet",
-    "writer": "J. Meade Falkner",
-    "publisher": "-",
-    "year": "1898",
-    "cetagory": "Novel, Fiksi, Klasik",
-    "price": 87000,
-    "about": "Moonfleet adalah novel tahun 1898 yang ditulis oleh penulis Inggris J. Meade Falkner. Plotnya adalah kisah petualangan penyelundupan, harta karun, dan kapal karam yang berlatar Inggris abad ke-18.",
-    "comments": [],
-    "file": "moonfleet.jpg"
-  },
-  {
-    "title": "SagaraS",
-    "writer": "Tere Liye",
-    "publisher": "Sabak Grip",
-    "year": "2022",
-    "cetagory": "Novel, Fiksi, Fantasi",
-    "price": 99000,
-    "about": "SagaraS merupakan buku ke-13 dari novel serial Bumi yang ditulis oleh Tere Liye",
-    "comments": ["Pengin tahu lanjutannya!!"],
-    "file": "sagaras.jpg"
-  },
-  {
-    "title": "Seribu Wajah Ayah",
-    "writer": "Nurun Ala",
-    "publisher": "Gramedia",
-    "year": "2020",
-    "cetagory": "Novel, Fiksi",
-    "price": 75000,
-    "about": "Malam ini, kamu dipaksa untuk menengok ke belakang sampai lehermu pegal. Kamu dipaksa untuk berkejar-kejaran dengan waktu untuk kembali memunguti potongan masa lalu.",
-    "comments": ["Gaje"],
-    "file": "seribuWajahAyah.jpg"
-  },
-  {
-    "title": "Sirkus Pohon",
-    "writer": "Andrea Hirata",
-    "publisher": "Bentang Pustaka",
-    "year": "2018",
-    "cetagory": "Novel, Fiksi",
-    "price": 102000,
-    "about": "Baiklah, Kawan, kuceritakan padamu soal pertempuranku melawan pohon delima di pekarangan rumahku dan bagaimana akhirnya pohon itu membuatku kena sel,lalu wajib lapor setiap Hari Senin, di Polsek Belantik. Benci nian aku pada delima itu, lihatlah pohon kampungan itu, ia macam kena kutuk.",
-    "comments": ["Bang Andrea Hirata memang tidak ada tandingannya"],
-    "file": "sirkuspohon.jpg"
-  },
-  {
-    "title": "The Art of Thinking Clearly",
-    "writer": "Rolf Dobelli",
-    "publisher": "Gramedia",
-    "year": "2013",
-    "cetagory": "Pengembangan Diri, Filsafat, Psikologi",
-    "price": 98000,
-    "about": "The Art of Thinking Clearly is a 2013 book by the Swiss writer Rolf Dobelli which describes in short chapters 99 of the most common thinking errors – ranging from cognitive biases to envy and social distortions.",
-    "comments": ["Sangat gg geming"],
-    "file": "TAOFTC.jpg"
-  }
-]
+{
+  "books": [
+    {
+      "title": "Berani Tidak Disukai",
+      "writer": "Ichiro Kishimi & Fumatake Koga",
+      "publisher": "Gramedia Pustaka Utama",
+      "year": "2019",
+      "cetagory": "Pengembangan Diri, Filsafat, Psikologi",
+      "price": 87000,
+      "about": "Membaca buku ini bisa mengubah hidup anda. jutaan orang sudah menarik manfaat darinya. sekarang giliran anda",
+      "comments": ["gg geming"],
+      "file": "berani.png"
+    },
+    {
+      "title": "Campbell Biology",
+      "writer": "Neil A. Campbell",
+      "publisher": "Rajawali Pers",
+      "year": "2010",
+      "cetagory": "Akademik, Biologi",
+      "price": 250000,
+      "about": "Neil Allison Campbell adalah seorang ilmuwan Amerika Serikat dan juga penulis buku di bidang mata pelajaran biologi untuk tingkat atas",
+      "comments": ["Pusing aing bacanya"],
+      "file": "biologi.jpg"
+    },
+    {
+      "title": "Calculus: An Intuitive and Physical Approach",
+      "writer": "Morris Kline",
+      "publisher": "Dover Publisher",
+      "year": "1998",
+      "cetagory": "Akademik, Matematika",
+      "price": 187000,
+      "about": "",
+      "comments": ["Aku dimana????"],
+      "file": "calculus.jpg"
+    },
+    {
+      "title": "Dunia Sophie",
+      "writer": "Jostein Gaarder",
+      "publisher": "Mizan",
+      "year": "1996",
+      "cetagory": "Pengembangan Diri, Filsafat, Psikologi, Novel",
+      "price": 13000,
+      "about": "Dunia Sophie adalah sebuah novel karya Jostein Gaarder, diterbitkan di Indonesia oleh Penerbit Mizan tahun 1996. Aslinya ditulis dalam bahasa Norwegia, tetapi sudah diterjemahkan kedalam limapuluhtiga bahasa, termasuk bahasa Indonesia",
+      "comments": ["Apakah Sokrates makan dengan tangan kiri?"],
+      "file": "duniashopie.jpg"
+    },
+    {
+      "title": "Fundamentals of Physics",
+      "writer": "David Halliday, Jearl Walker, Robert Resnick",
+      "publisher": "New York Times",
+      "year": "2004",
+      "cetagory": "Akademik, Fisika",
+      "price": 147000,
+      "about": "",
+      "comments": ["Andai Newton duduk di bawah pohon duren"],
+      "file": "fisika.jpg"
+    },
+    {
+      "title": "Jujutsu Kaisen Vol. 5",
+      "writer": "Gege Akutami",
+      "publisher": "Elex Media Komputindo",
+      "year": "2019",
+      "cetagory": "Manga, Komik, Fiksi",
+      "price": 58000,
+      "about": "Program pertukaran dengan Akademi Jujutsu Kyoto dimulai. Pihak yang duluan menyingkirkan jurei tingkat 2 di area pertandinganlah yang akan jadi pemenangnya. Todo yang gemar berkelahi segera menyerang pihak Tokyo.",
+      "comments": ["Kapan lanjutannya??", "Seru parah!"],
+      "file": "jjk5.jpg"
+    },
+    {
+      "title": "Burung-burung Manyar",
+      "writer": "Y.B. Mangunwijaya",
+      "publisher": "Djambatan",
+      "year": "1981",
+      "cetagory": "Novel, Fiksi, Sejarah",
+      "price": 79000,
+      "about": "Burung-burung Manyar adalah novel karangan Y.B. Mangunwijaya. Novel ini terbit pertama kali pada tahun 1981. Sampai tahun 2007 Burung-burung Manyar telah terbit sebanyak 15 kali. Novel Burung-burung Manyar merupakan novel sejarah. Sejarah yang termuat dalam novel ini adalah sejarah Indonesia dari tahun 1934-1978.",
+      "comments": ["Pengin nangis habis baca ini 😭😭"],
+      "file": "manyar.jpg"
+    },
+    {
+      "title": "Melangkah",
+      "writer": "J. S. Khairen",
+      "publisher": "Grasindo",
+      "year": "2020",
+      "cetagory": "Novel, Fiksi",
+      "price": 98000,
+      "about": "Listrik padam di seluruh Jawa dan Bali secara misterius! Ancaman nyata kekuatan baru yang hendak menaklukkan Nusantara. Saat yang sama, empat sahabat mendarat di Sumba, hanya untuk mendapati nasib ratusan juta manusia ada di tangan mereka!",
+      "comments": [],
+      "file": "melangkah.jpg"
+    },
+    {
+      "title": "Moonfleet",
+      "writer": "J. Meade Falkner",
+      "publisher": "-",
+      "year": "1898",
+      "cetagory": "Novel, Fiksi, Klasik",
+      "price": 87000,
+      "about": "Moonfleet adalah novel tahun 1898 yang ditulis oleh penulis Inggris J. Meade Falkner. Plotnya adalah kisah petualangan penyelundupan, harta karun, dan kapal karam yang berlatar Inggris abad ke-18.",
+      "comments": [],
+      "file": "moonfleet.jpg"
+    },
+    {
+      "title": "SagaraS",
+      "writer": "Tere Liye",
+      "publisher": "Sabak Grip",
+      "year": "2022",
+      "cetagory": "Novel, Fiksi, Fantasi",
+      "price": 99000,
+      "about": "SagaraS merupakan buku ke-13 dari novel serial Bumi yang ditulis oleh Tere Liye",
+      "comments": ["Pengin tahu lanjutannya!!"],
+      "file": "sagaras.jpg"
+    },
+    {
+      "title": "Seribu Wajah Ayah",
+      "writer": "Nurun Ala",
+      "publisher": "Gramedia",
+      "year": "2020",
+      "cetagory": "Novel, Fiksi",
+      "price": 75000,
+      "about": "Malam ini, kamu dipaksa untuk menengok ke belakang sampai lehermu pegal. Kamu dipaksa untuk berkejar-kejaran dengan waktu untuk kembali memunguti potongan masa lalu.",
+      "comments": ["Gaje"],
+      "file": "seribuWajahAyah.jpg"
+    },
+    {
+      "title": "Sirkus Pohon",
+      "writer": "Andrea Hirata",
+      "publisher": "Bentang Pustaka",
+      "year": "2018",
+      "cetagory": "Novel, Fiksi",
+      "price": 102000,
+      "about": "Baiklah, Kawan, kuceritakan padamu soal pertempuranku melawan pohon delima di pekarangan rumahku dan bagaimana akhirnya pohon itu membuatku kena sel,lalu wajib lapor setiap Hari Senin, di Polsek Belantik. Benci nian aku pada delima itu, lihatlah pohon kampungan itu, ia macam kena kutuk.",
+      "comments": ["Bang Andrea Hirata memang tidak ada tandingannya"],
+      "file": "sirkuspohon.jpg"
+    },
+    {
+      "title": "The Art of Thinking Clearly",
+      "writer": "Rolf Dobelli",
+      "publisher": "Gramedia",
+      "year": "2013",
+      "cetagory": "Pengembangan Diri, Filsafat, Psikologi",
+      "price": 98000,
+      "about": "The Art of Thinking Clearly is a 2013 book by the Swiss writer Rolf Dobelli which describes in short chapters 99 of the most common thinking errors – ranging from cognitive biases to envy and social distortions.",
+      "comments": ["Sangat gg geming"],
+      "file": "TAOFTC.jpg"
+    }
+  ]
+}
