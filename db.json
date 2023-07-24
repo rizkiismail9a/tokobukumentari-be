@@ -10,7 +10,8 @@
       "about": "Membaca buku ini bisa mengubah hidup anda. jutaan orang sudah menarik manfaat darinya. sekarang giliran anda",
       "comments": ["gg geming"],
       "file": "berani.png",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "Campbell Biology",
@@ -22,7 +23,8 @@
       "about": "Neil Allison Campbell adalah seorang ilmuwan Amerika Serikat dan juga penulis buku di bidang mata pelajaran biologi untuk tingkat atas",
       "comments": ["Pusing aing bacanya"],
       "file": "biologi.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "Calculus: An Intuitive and Physical Approach",
@@ -34,7 +36,8 @@
       "about": "",
       "comments": ["Aku dimana????"],
       "file": "calculus.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "Dunia Sophie",
@@ -46,7 +49,8 @@
       "about": "Dunia Sophie adalah sebuah novel karya Jostein Gaarder, diterbitkan di Indonesia oleh Penerbit Mizan tahun 1996. Aslinya ditulis dalam bahasa Norwegia, tetapi sudah diterjemahkan kedalam limapuluhtiga bahasa, termasuk bahasa Indonesia",
       "comments": ["Apakah Sokrates makan dengan tangan kiri?"],
       "file": "duniashopie.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "Fundamentals of Physics",
@@ -58,7 +62,8 @@
       "about": "",
       "comments": ["Andai Newton duduk di bawah pohon duren"],
       "file": "fisika.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "Jujutsu Kaisen Vol. 5",
@@ -70,7 +75,8 @@
       "about": "Program pertukaran dengan Akademi Jujutsu Kyoto dimulai. Pihak yang duluan menyingkirkan jurei tingkat 2 di area pertandinganlah yang akan jadi pemenangnya. Todo yang gemar berkelahi segera menyerang pihak Tokyo.",
       "comments": ["Kapan lanjutannya??", "Seru parah!"],
       "file": "jjk5.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "Burung-burung Manyar",
@@ -82,7 +88,8 @@
       "about": "Burung-burung Manyar adalah novel karangan Y.B. Mangunwijaya. Novel ini terbit pertama kali pada tahun 1981. Sampai tahun 2007 Burung-burung Manyar telah terbit sebanyak 15 kali. Novel Burung-burung Manyar merupakan novel sejarah. Sejarah yang termuat dalam novel ini adalah sejarah Indonesia dari tahun 1934-1978.",
       "comments": ["Pengin nangis habis baca ini 😭😭"],
       "file": "manyar.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "Melangkah",
@@ -94,7 +101,8 @@
       "about": "Listrik padam di seluruh Jawa dan Bali secara misterius! Ancaman nyata kekuatan baru yang hendak menaklukkan Nusantara. Saat yang sama, empat sahabat mendarat di Sumba, hanya untuk mendapati nasib ratusan juta manusia ada di tangan mereka!",
       "comments": [],
       "file": "melangkah.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "Moonfleet",
@@ -106,7 +114,8 @@
       "about": "Moonfleet adalah novel tahun 1898 yang ditulis oleh penulis Inggris J. Meade Falkner. Plotnya adalah kisah petualangan penyelundupan, harta karun, dan kapal karam yang berlatar Inggris abad ke-18.",
       "comments": [],
       "file": "moonfleet.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "SagaraS",
@@ -118,7 +127,8 @@
       "about": "SagaraS merupakan buku ke-13 dari novel serial Bumi yang ditulis oleh Tere Liye",
       "comments": ["Pengin tahu lanjutannya!!"],
       "file": "sagaras.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "Seribu Wajah Ayah",
@@ -130,7 +140,8 @@
       "about": "Malam ini, kamu dipaksa untuk menengok ke belakang sampai lehermu pegal. Kamu dipaksa untuk berkejar-kejaran dengan waktu untuk kembali memunguti potongan masa lalu.",
       "comments": ["Gaje"],
       "file": "seribuWajahAyah.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "Sirkus Pohon",
@@ -142,7 +153,8 @@
       "about": "Baiklah, Kawan, kuceritakan padamu soal pertempuranku melawan pohon delima di pekarangan rumahku dan bagaimana akhirnya pohon itu membuatku kena sel,lalu wajib lapor setiap Hari Senin, di Polsek Belantik. Benci nian aku pada delima itu, lihatlah pohon kampungan itu, ia macam kena kutuk.",
       "comments": ["Bang Andrea Hirata memang tidak ada tandingannya"],
       "file": "sirkuspohon.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "The Art of Thinking Clearly",
@@ -154,7 +166,8 @@
       "about": "The Art of Thinking Clearly is a 2013 book by the Swiss writer Rolf Dobelli which describes in short chapters 99 of the most common thinking errors – ranging from cognitive biases to envy and social distortions.",
       "comments": ["Sangat gg geming"],
       "file": "TAOFTC.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     }
   ],
   "best-selling": [
@@ -168,7 +181,8 @@
       "about": "The Art of Thinking Clearly is a 2013 book by the Swiss writer Rolf Dobelli which describes in short chapters 99 of the most common thinking errors – ranging from cognitive biases to envy and social distortions.",
       "comments": ["Sangat gg geming"],
       "file": "TAOFTC.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "SagaraS",
@@ -180,7 +194,8 @@
       "about": "SagaraS merupakan buku ke-13 dari novel serial Bumi yang ditulis oleh Tere Liye",
       "comments": ["Pengin tahu lanjutannya!!"],
       "file": "sagaras.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "Dunia Sophie",
@@ -192,7 +207,8 @@
       "about": "Dunia Sophie adalah sebuah novel karya Jostein Gaarder, diterbitkan di Indonesia oleh Penerbit Mizan tahun 1996. Aslinya ditulis dalam bahasa Norwegia, tetapi sudah diterjemahkan kedalam limapuluhtiga bahasa, termasuk bahasa Indonesia",
       "comments": ["Apakah Sokrates makan dengan tangan kiri?"],
       "file": "duniashopie.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     },
     {
       "title": "Jujutsu Kaisen Vol. 5",
@@ -204,7 +220,8 @@
       "about": "Program pertukaran dengan Akademi Jujutsu Kyoto dimulai. Pihak yang duluan menyingkirkan jurei tingkat 2 di area pertandinganlah yang akan jadi pemenangnya. Todo yang gemar berkelahi segera menyerang pihak Tokyo.",
       "comments": ["Kapan lanjutannya??", "Seru parah!"],
       "file": "jjk5.jpg",
-      "likes": 0
+      "likes": 0,
+      "isSolid": "regular"
     }
   ]
 }
