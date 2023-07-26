@@ -22,7 +22,7 @@
       "price": 250000,
       "about": "Neil Allison Campbell adalah seorang ilmuwan Amerika Serikat dan juga penulis buku di bidang mata pelajaran biologi untuk tingkat atas",
       "comments": ["Pusing aing bacanya"],
-      "file": "biologi.jpg",
+      "file": "biologi.webp",
       "likes": 0,
       "isSolid": "regular"
     },
@@ -35,7 +35,7 @@
       "price": 187000,
       "about": "",
       "comments": ["Aku dimana????"],
-      "file": "calculus.jpg",
+      "file": "calculus.web",
       "likes": 0,
       "isSolid": "regular"
     },
@@ -48,7 +48,7 @@
       "price": 130000,
       "about": "Dunia Sophie adalah sebuah novel karya Jostein Gaarder, diterbitkan di Indonesia oleh Penerbit Mizan tahun 1996. Aslinya ditulis dalam bahasa Norwegia, tetapi sudah diterjemahkan kedalam limapuluhtiga bahasa, termasuk bahasa Indonesia",
       "comments": ["Apakah Sokrates makan dengan tangan kiri?"],
-      "file": "duniashopie.jpg",
+      "file": "duniashopie.webp",
       "likes": 0,
       "isSolid": "regular"
     },
@@ -61,7 +61,7 @@
       "price": 147000,
       "about": "",
       "comments": ["Andai Newton duduk di bawah pohon duren"],
-      "file": "fisika.jpg",
+      "file": "fisika.webp",
       "likes": 0,
       "isSolid": "regular"
     },
@@ -74,7 +74,7 @@
       "price": 58000,
       "about": "Program pertukaran dengan Akademi Jujutsu Kyoto dimulai. Pihak yang duluan menyingkirkan jurei tingkat 2 di area pertandinganlah yang akan jadi pemenangnya. Todo yang gemar berkelahi segera menyerang pihak Tokyo.",
       "comments": ["Kapan lanjutannya??", "Seru parah!"],
-      "file": "jjk5.jpg",
+      "file": "jjk5.webp",
       "likes": 0,
       "isSolid": "regular"
     },
@@ -87,7 +87,7 @@
       "price": 79000,
       "about": "Burung-burung Manyar adalah novel karangan Y.B. Mangunwijaya. Novel ini terbit pertama kali pada tahun 1981. Sampai tahun 2007 Burung-burung Manyar telah terbit sebanyak 15 kali. Novel Burung-burung Manyar merupakan novel sejarah. Sejarah yang termuat dalam novel ini adalah sejarah Indonesia dari tahun 1934-1978.",
       "comments": ["Pengin nangis habis baca ini 😭😭"],
-      "file": "manyar.jpg",
+      "file": "manyar.webp",
       "likes": 0,
       "isSolid": "regular"
     },
@@ -100,7 +100,7 @@
       "price": 98000,
       "about": "Listrik padam di seluruh Jawa dan Bali secara misterius! Ancaman nyata kekuatan baru yang hendak menaklukkan Nusantara. Saat yang sama, empat sahabat mendarat di Sumba, hanya untuk mendapati nasib ratusan juta manusia ada di tangan mereka!",
       "comments": [],
-      "file": "melangkah.jpg",
+      "file": "melangkah.webp",
       "likes": 0,
       "isSolid": "regular"
     },
@@ -126,7 +126,7 @@
       "price": 99000,
       "about": "SagaraS merupakan buku ke-13 dari novel serial Bumi yang ditulis oleh Tere Liye",
       "comments": ["Pengin tahu lanjutannya!!"],
-      "file": "sagaras.jpg",
+      "file": "sagaras.webp",
       "likes": 0,
       "isSolid": "regular"
     },
@@ -139,7 +139,7 @@
       "price": 75000,
       "about": "Malam ini, kamu dipaksa untuk menengok ke belakang sampai lehermu pegal. Kamu dipaksa untuk berkejar-kejaran dengan waktu untuk kembali memunguti potongan masa lalu.",
       "comments": ["Gaje"],
-      "file": "seribuWajahAyah.jpg",
+      "file": "seribuWajahAyah.webp",
       "likes": 0,
       "isSolid": "regular"
     },
@@ -193,7 +193,7 @@
       "price": 99000,
       "about": "SagaraS merupakan buku ke-13 dari novel serial Bumi yang ditulis oleh Tere Liye",
       "comments": ["Pengin tahu lanjutannya!!"],
-      "file": "sagaras.jpg",
+      "file": "sagaras.webp",
       "likes": 0,
       "isSolid": "regular"
     },
@@ -206,7 +206,7 @@
       "price": 130000,
       "about": "Dunia Sophie adalah sebuah novel karya Jostein Gaarder, diterbitkan di Indonesia oleh Penerbit Mizan tahun 1996. Aslinya ditulis dalam bahasa Norwegia, tetapi sudah diterjemahkan kedalam limapuluhtiga bahasa, termasuk bahasa Indonesia",
       "comments": ["Apakah Sokrates makan dengan tangan kiri?"],
-      "file": "duniashopie.jpg",
+      "file": "duniashopie.webp",
       "likes": 0,
       "isSolid": "regular"
     },
@@ -219,7 +219,7 @@
       "price": 58000,
       "about": "Program pertukaran dengan Akademi Jujutsu Kyoto dimulai. Pihak yang duluan menyingkirkan jurei tingkat 2 di area pertandinganlah yang akan jadi pemenangnya. Todo yang gemar berkelahi segera menyerang pihak Tokyo.",
       "comments": ["Kapan lanjutannya??", "Seru parah!"],
-      "file": "jjk5.jpg",
+      "file": "jjk5.webp",
       "likes": 0,
       "isSolid": "regular"
     }
