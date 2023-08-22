@@ -116,4 +116,37 @@ async function getUser(req, res) {
   const userProfile = req.user;
   return res.status(200).send(userProfile);
 }
-module.exports = { register, login, logout, refresh, getUser };
+// route ini dijaga. Harus punya bearer authorization
+async function editUser(req, res) {
+  // cek apakah ada inputan yang masuk
+  const data = req.body;
+  if (!data.username || !data.email || !data.full_name) {
+    return res.status(400).send({ message: "form isian tidak boleh kosong" });
+  }
+  // cek apakah user login atau tidak
+  const cookies = req.cookies;
+  if (!cookies.papoi) return res.sendStatus(401);
+  // cek apakah user dengan token papoi itu ada
+  const findUser = await UserModel.findOne({ refresh_token: cookies.papoi }, { password: 0, refresh_token: 0 }).exec();
+  if (!findUser) {
+    return res.sendStatus(401);
+  }
+  // cek apakah data yang dimasukkan sama dengan data lama
+  if (data.username === findUser.username && data.email === findUser.email && data.full_name === findUser.full_name) {
+    return res.status(400).send({ message: "Kamu belum mengubah apapun" });
+  }
+  // cek apakah username atau email baru dia pernah ada yang pakai
+  const isEmailUsed = await UserModel.findOne({ email: data.email }).exec();
+  const isUserNameUsed = await UserModel.findOne({ username: data.username });
+  if (isEmailUsed || isUserNameUsed) return res.status(400).send({ message: "username atau email itu sudah dipakai" });
+  try {
+    findUser.username = data.username;
+    findUser.email = data.email;
+    findUser.full_name = data.full_name;
+    await findUser.save();
+    return res.status(200).send({ message: "Data berhasil disimpan" });
+  } catch (error) {
+    return res.send(error);
+  }
+}
+module.exports = { register, login, logout, refresh, getUser, editUser };

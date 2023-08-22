@@ -11,7 +11,7 @@ const reqMiddleware = require("./middleware/reqMiddleware");
 // pemakaian package/module
 const port = process.env.PORT || 8000;
 const app = express();
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 app.use(reqMiddleware);
