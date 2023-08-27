@@ -1,6 +1,9 @@
 const UserModel = require("../models/user");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
+const path = require("path");
+const fs = require("fs");
+// daftar
 async function register(req, res) {
   const data = req.body;
   if (!data.username || !data.email || !data.full_name || !data.password || !data.password_confirm) {
@@ -30,6 +33,7 @@ async function register(req, res) {
   }
 }
 
+// login
 async function login(req, res) {
   const data = req.body;
   if (!data.identity || !data.password) {
@@ -71,6 +75,8 @@ async function login(req, res) {
     console.log(error);
   }
 }
+
+// logout
 async function logout(req, res) {
   const cookies = req.cookies;
   if (!cookies.papoi) return res.sendStatus(204);
@@ -84,6 +90,8 @@ async function logout(req, res) {
   res.clearCookie("papoi", { httpOnly: true, sameSite: "None", secure: true });
   return res.status(200).send({ message: "Sampai jumpa lagi!" });
 }
+
+// Buat token baru
 async function refresh(req, res) {
   const cookies = req.cookies;
   if (!cookies.papoi) return res.sendStatus(401);
@@ -112,41 +120,122 @@ async function refresh(req, res) {
     console.log(error);
   }
 }
+
+// Ambil data diri user
 async function getUser(req, res) {
   const userProfile = req.user;
   return res.status(200).send(userProfile);
 }
-// route ini dijaga. Harus punya bearer authorization
+
+// Update data user selai foto profil
 async function editUser(req, res) {
   // cek apakah ada inputan yang masuk
-  const data = req.body;
+  const data = req?.body;
+  // kita hanya akan ambil url dari file-nya saja
+
   if (!data.username || !data.email || !data.full_name) {
     return res.status(400).send({ message: "form isian tidak boleh kosong" });
   }
   // cek apakah user login atau tidak
-  const cookies = req.cookies;
-  if (!cookies.papoi) return res.sendStatus(401);
-  // cek apakah user dengan token papoi itu ada
-  const findUser = await UserModel.findOne({ refresh_token: cookies.papoi }, { password: 0, refresh_token: 0 }).exec();
-  if (!findUser) {
-    return res.sendStatus(401);
+  const user = req?.user;
+  if (!user) {
+    return res.status(401).send({ message: "Kamu tidak punya akses ke sini" });
   }
-  // cek apakah data yang dimasukkan sama dengan data lama
-  if (data.username === findUser.username && data.email === findUser.email && data.full_name === findUser.full_name) {
-    return res.status(400).send({ message: "Kamu belum mengubah apapun" });
-  }
-  // cek apakah username atau email baru dia pernah ada yang pakai
+
+  // Cek apakah data yang dikirim oleh user sudah ada yang pakai
+
   const isEmailUsed = await UserModel.findOne({ email: data.email }).exec();
-  const isUserNameUsed = await UserModel.findOne({ username: data.username });
-  if (isEmailUsed || isUserNameUsed) return res.status(400).send({ message: "username atau email itu sudah dipakai" });
+  if (isEmailUsed && isEmailUsed?.id !== user?.id) {
+    return res.status(400).send({ message: "Username atau Email itu sudah ada yang pakai" });
+  }
+  const isUsernameUsed = await UserModel.findOne({ username: data.username }).exec();
+  if (isUsernameUsed && isUsernameUsed?.id !== user?.id) {
+    return res.status(400).send({ message: "Username atau Email itu sudah ada yang pakai" });
+  }
   try {
+    const findUser = await UserModel.findById(user.id);
     findUser.username = data.username;
     findUser.email = data.email;
     findUser.full_name = data.full_name;
     await findUser.save();
     return res.status(200).send({ message: "Data berhasil disimpan" });
   } catch (error) {
-    return res.send(error);
+    console.log(error);
+    return res.status(400).send({ message: "Ada kesalahan di server" });
   }
 }
-module.exports = { register, login, logout, refresh, getUser, editUser };
+// ubah kata sandi
+async function changePassword(req, res) {
+  const user = req.user;
+  const findUser = await UserModel.findById(user.id).exec();
+  // cek apakah sandi lama benar
+  const data = req.body;
+  const isPassCorrect = await bcrypt.compare(data.oldPass, findUser.password);
+  if (!isPassCorrect) {
+    return res.status(400).send({ message: "Kata sandi lama salah" });
+  }
+  try {
+    const salt = await bcrypt.genSalt(10);
+    const hashedPass = await bcrypt.hash(data.newPass, salt);
+    findUser.password = hashedPass;
+    await findUser.save();
+    return res.status(200).send({ message: "Kata sandi berhasil diubah" });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+// Ambil link menuju foto profil
+async function getImage(req, res) {
+  const user = req?.user;
+  if (!user) {
+    return res.status(401).send({ message: "Kamu tidak punya akses ke sini" });
+  }
+  const image = user?.image;
+  if (!image) {
+    return res.status(204);
+  }
+  const findUser = await UserModel.findById(user.id).exec();
+  if (!findUser) {
+    return res.status(204);
+  }
+  try {
+    return res.status(200).send(`http://localhost:8000/${findUser?.image}`);
+  } catch (error) {
+    console.log(error);
+  }
+}
+// Update foto profil
+async function updateImg(req, res) {
+  const file = req.file?.path;
+  const user = req.user;
+  const findUser = await UserModel.findById(user.id).exec();
+  if (!file) {
+    return res.status(400).send({ message: "Tidak ada gambar yang diunggah" });
+  }
+  if (!findUser) {
+    return res.status(204);
+  }
+  let oldPicture = findUser?.image;
+  // Kalau oldPicture ada, hapus dulu gambar lama
+  if (oldPicture) {
+    oldPicture = path.join(__dirname, `../${oldPicture}`);
+    fs.unlink(oldPicture, (err) => console.log(err));
+    try {
+      findUser.image = file;
+      await findUser.save();
+      return res.status(200).send({ message: "Gambar berhasil disimpan" });
+    } catch (error) {
+      return res.status(400).send({ message: "Ada kesalahan di server" });
+    }
+  } else {
+    try {
+      findUser.image = file;
+      await findUser.save();
+      return res.status(200).send({ message: "Gambar berhasil disimpan" });
+    } catch (error) {
+      return res.status(400).send({ message: "Ada kesalahan di server" });
+    }
+  }
+}
+module.exports = { register, login, logout, refresh, getUser, editUser, updateImg, getImage, changePassword };
