@@ -8,7 +8,7 @@ const cors = require("cors");
 // const multerConfig = require("./config/multer");
 // const fileStorage = require("./config/multer");
 // const fileFilter = require("./middleware/multer");
-const router = require("./routes/routes");
+// const router = require("./routes/book");
 const corsOption = require("./config/cors");
 const credentials = require("./middleware/credentials");
 const reqMiddleware = require("./middleware/reqMiddleware");
@@ -33,7 +33,7 @@ mongoose.connect(MONGODB_URL, { useNewURLParser: true, useUnifiedTopology: true 
 
 // router
 app.use("/images", express.static(path.join(__dirname, "images")));
-app.use("/api/products", router);
+app.use("/api/products", require("./routes/bookRoutes"));
 app.use("/auth", require("./routes/authRoutes"));
 app.all("*", (req, res) => {
   res.status(404).send({ message: "Halaman itu tidak ada" });
