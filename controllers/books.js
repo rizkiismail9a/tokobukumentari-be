@@ -18,13 +18,32 @@ async function searchBook(req, res) {
   const regex = new RegExp(data.keyword, "gi");
   const resultTitle = await BookModel.find({ title: regex });
   const resultWriter = await BookModel.find({ writer: regex });
-  if (resultTitle.length === 0 && resultWriter.length === 0) {
-    return res.status(404).send({ message: "Belum punya buku itu, :'(" });
+  const resultCetagory = await BookModel.find({ cetagory: regex });
+  try {
+    if (resultTitle.length === 0 && resultWriter.length === 0 && resultCetagory.length === 0) {
+      return res.status(400).send({ message: "Belum punya buku itu, :'(" });
+    }
+    const allResults = resultTitle.length !== 0 ? resultTitle : resultWriter.length !== 0 ? resultWriter : resultCetagory;
+    return res.status(200).send(allResults);
+  } catch (error) {
+    console.log(error);
   }
-  const allResults = resultTitle.length !== 0 ? resultTitle : resultWriter;
-  return res.status(200).send(allResults);
 }
-
+// ambil best selling
+async function bestSelling(req, res) {
+  const getBestBooks = await BookModel.find({ bestSelling: true });
+  return res.status(200).send(getBestBooks);
+}
+// Lihat detail buku
+async function seeBookDetail(req, res) {
+  const bookId = req.params.id;
+  const findBook = await BookModel.findById(bookId).exec();
+  try {
+    return res.status(200).send(findBook);
+  } catch (error) {
+    return res.status(404).send({ message: "Buku itu tidak ada" });
+  }
+}
 // komentari buku
 async function sendComment(req, res) {
   const bookId = req.params.id;
@@ -60,4 +79,4 @@ async function getBookComments(req, res) {
   const comments = findBook.comments;
   return res.status(200).send(comments);
 }
-module.exports = { getBooks, searchBook, sendComment, getBookComments };
+module.exports = { getBooks, searchBook, sendComment, getBookComments, bestSelling, seeBookDetail };
