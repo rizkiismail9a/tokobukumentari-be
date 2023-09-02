@@ -35,6 +35,7 @@ mongoose.connect(MONGODB_URL, { useNewURLParser: true, useUnifiedTopology: true 
 app.use("/images", express.static(path.join(__dirname, "images")));
 app.use("/api/products", require("./routes/bookRoutes"));
 app.use("/auth", require("./routes/authRoutes"));
+app.use("/api/shop", require("./routes/shopRoutes"));
 app.all("*", (req, res) => {
   res.status(404).send({ message: "Halaman itu tidak ada" });
 });

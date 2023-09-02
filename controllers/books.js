@@ -53,7 +53,7 @@ async function sendComment(req, res) {
     return res.status(400).send({ message: "Komentar tidak boleh kosong" });
   }
   const findBook = await BookModel.findById(bookId).exec();
-  const findUser = await UserModel.findById(user.id).select({ password: 0, refresh_token: 0, __v: 0, updated_at: 0 }).exec();
+  const findUser = await UserModel.findById(user.id).select({ password: 0, refresh_token: 0, __v: 0, updated_at: 0, cart: 0 }).exec();
   if (!findBook) {
     return res.status(400).send({ message: "Buku tidak ditemukan di server. Jangan khawatir, ini bukan salah kamu" });
   }
@@ -76,7 +76,10 @@ async function getBookComments(req, res) {
   const bookId = req.params.id;
   const findBook = await BookModel.findById(bookId).exec();
   if (!findBook) return res.sendStatus(204);
-  const comments = findBook.comments;
+  const comments = findBook?.comments;
+  if (!comments) {
+    return res.sendStatus(204);
+  }
   return res.status(200).send(comments);
 }
 module.exports = { getBooks, searchBook, sendComment, getBookComments, bestSelling, seeBookDetail };
