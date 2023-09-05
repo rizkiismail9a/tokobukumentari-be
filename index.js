@@ -25,7 +25,15 @@ app.use(cors(corsOption));
 // 'image maksudnya adalah req.file.image, nama request file-nya harus image
 // app.use(multer({ storage: fileStorage, fileFilter }).single("image"));
 const MONGODB_URL = process.env.MONGODB_URL;
-mongoose.connect(MONGODB_URL, { useNewURLParser: true, useUnifiedTopology: true });
+const connectDB = async () => {
+  try {
+    const conn = await mongoose.connect(MONGODB_URL);
+    console.log(`MongoDB Connected: ${conn.connection.host}`);
+  } catch (error) {
+    console.log(error);
+    process.exit(1);
+  }
+};
 
 // router
 app.use("/images", express.static(path.join(__dirname, "images")));
@@ -35,8 +43,7 @@ app.use("/api/shop", require("./routes/shopRoutes"));
 app.all("*", (req, res) => {
   res.status(404).send({ message: "Halaman itu tidak ada" });
 });
-mongoose.connection.once("open", () => {
-  console.log("Berhasil terhubung ke database");
+connectDB().then(() => {
   app.listen(port, () => {
     console.log(`Aplikasi berjalan di port ${port}`);
   });
