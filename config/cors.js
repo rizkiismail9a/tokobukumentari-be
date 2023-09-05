@@ -4,7 +4,7 @@ const corsOption = {
     if (allowedOrigin.includes(origin) || !origin) {
       callback(null, true);
     } else {
-      callback(new Error("Kamu tidak punya akses ke sini"));
+      callback(new Error("Kamu tidak punya akses ke sini, kata cors"));
     }
   },
 };
