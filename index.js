@@ -4,11 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
-// const multer = require("multer");
-// const multerConfig = require("./config/multer");
-// const fileStorage = require("./config/multer");
-// const fileFilter = require("./middleware/multer");
-// const router = require("./routes/book");
+
 const corsOption = require("./config/cors");
 const credentials = require("./middleware/credentials");
 const reqMiddleware = require("./middleware/reqMiddleware");
