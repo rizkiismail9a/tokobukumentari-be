@@ -2,7 +2,6 @@
 .vscode/*
 *.log
 *.secret
-models/
 db.json
 #ignore a specific file
 /app/access.log
