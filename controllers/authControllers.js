@@ -187,15 +187,8 @@ async function changePassword(req, res) {
 
 // Ambil link menuju foto profil
 async function getImage(req, res) {
-  const user = req?.user;
-  if (!user) {
-    return res.status(401).send({ message: "Kamu tidak punya akses ke sini" });
-  }
-  const image = user?.image;
-  if (!image) {
-    return res.status(204);
-  }
-  const findUser = await UserModel.findById(user.id).exec();
+  const user = req?.params.userId;
+  const findUser = await UserModel.findById(user).exec();
   if (!findUser) {
     return res.status(204);
   }

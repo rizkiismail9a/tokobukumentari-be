@@ -11,7 +11,7 @@ const reqMiddleware = require("./middleware/reqMiddleware");
 // Ini buat apa? Ini supaya route ke file statis di dalam server bisa diakses
 const path = require("path");
 // pemakaian package/module
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

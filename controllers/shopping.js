@@ -58,26 +58,4 @@ async function removeItem(req, res) {
     return res.send({ message: "Ada kesalahan di server. Tenang, bukan salah kamu, kok :D" });
   }
 }
-// tambahkan product ke wishlist
-async function addToWishlist(req, res) {
-  // ambil user-nya
-  const user = req.user;
-  const findUser = await UserModel.findById(user.id).exec();
-  if (!findUser) {
-    return res.status(404).send({ message: "User tidak ditemukan di database" });
-  }
-  // ambil id buku
-  const bookId = req.params.id;
-  const findBook = await BookModel.findById(bookId).exec();
-  if (!findBook) {
-    return res.status(404).send({ message: "Buku tidak ditemukan di data base" });
-  }
-  try {
-    findUser.wishlists.push(findBook);
-    await findUser.save();
-    return res.status(200).send({ message: "Buku berhasil ditambahkan ke favorit" });
-  } catch (error) {
-    console.log(error);
-  }
-}
-module.exports = { addToCart, getCart, removeItem, addToWishlist };
+module.exports = { addToCart, getCart, removeItem };

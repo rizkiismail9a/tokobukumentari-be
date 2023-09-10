@@ -8,7 +8,7 @@ router.post("/login", login);
 router.post("/logout", logout);
 router.post("/refresh", refresh);
 router.get("/getUser", auth, getUser);
-router.get("/getImage", auth, getImage);
+router.get("/getImage/:userId", getImage);
 router.put("/editUser", auth, editUser);
 router.post("/uploadImage", auth, uploadImage("image"), updateImg);
 router.put("/changePass", auth, changePassword);

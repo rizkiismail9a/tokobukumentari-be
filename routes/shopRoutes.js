@@ -5,7 +5,5 @@ const { addToCart, getCart, removeItem, addToWishlist } = require("../controller
 router.put("/addToCart/:id", auth, addToCart);
 router.get("/getCart", auth, getCart);
 router.delete("/removeItem/:index", auth, removeItem);
-router.patch("/addToWishlist/:id", auth, addToWishlist);
-// router.put("/updateAmount", auth, updateAmount);
 
 module.exports = router;

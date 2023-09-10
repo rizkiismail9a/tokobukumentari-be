@@ -1,4 +1,4 @@
-const allowedOrigin = ["http://localhost:8000", "http://localhost:8080", "http://localhost:5173", "https://tokobukumentari.vercel.app/", "https://misty-puce-hedgehog.cyclic.app/"];
+const allowedOrigin = ["http://localhost:8000", "http://localhost:8080", "http://localhost:5173"];
 
 const credentials = (req, res, next) => {
   const origin = req.headers.origin;

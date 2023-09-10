@@ -21,7 +21,7 @@ function uploadImage(imageFile) {
     }
     cb(null, true);
   };
-  const maxSize = 10 * 10 * 1000;
+  const maxSize = 10000000; //10^7 bytes atau 10mb
   const upload = multer({ storage: fileStorage, fileFilter, limits: { fileSize: maxSize } }).single(imageFile);
   return (req, res, next) => {
     upload(req, res, function (err) {

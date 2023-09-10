@@ -62,7 +62,7 @@ async function sendComment(req, res) {
   }
   try {
     // Push, karena dia, kan, array
-    findBook.comments.push({ content: { userComment, user: findUser } });
+    findBook.comments.push({ content: { userComment, user: findUser._id } });
     await findBook.save();
     return res.status(200).send({ message: "Komentar berhasil ditambahkan" });
   } catch (error) {
@@ -70,16 +70,4 @@ async function sendComment(req, res) {
     return res.status(400).send(error);
   }
 }
-
-// Ambil komentar semua user
-async function getBookComments(req, res) {
-  const bookId = req.params.id;
-  const findBook = await BookModel.findById(bookId).exec();
-  if (!findBook) return res.sendStatus(204);
-  const comments = findBook?.comments;
-  if (!comments) {
-    return res.sendStatus(204);
-  }
-  return res.status(200).send(comments);
-}
-module.exports = { getBooks, searchBook, sendComment, getBookComments, bestSelling, seeBookDetail };
+module.exports = { getBooks, searchBook, sendComment, bestSelling, seeBookDetail };
