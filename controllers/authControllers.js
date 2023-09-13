@@ -193,7 +193,7 @@ async function getImage(req, res) {
     return res.status(204);
   }
   try {
-    return res.status(200).send(`http://localhost:8000/${findUser?.image}`);
+    return res.status(200).send(`https://relieved-pear-dungarees.cyclic.app/${findUser?.image}`);
   } catch (error) {
     console.log(error);
   }
