@@ -1,4 +1,4 @@
-const allowedOrigin = ["http://localhost:5173", "https://tokobukumentari.netlify.app/"];
+const allowedOrigin = ["http://localhost:5173", "https://tokobukumentari.netlify.app"];
 
 const credentials = (req, res, next) => {
   const origin = req.headers.origin;
