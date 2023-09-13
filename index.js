@@ -36,6 +36,9 @@ const connectDB = async () => {
 };
 
 // router
+app.get("/", (req, res) => {
+  res.send("API berhasil diakses");
+});
 app.use("/images", express.static(path.join(__dirname, "images")));
 app.use("/api/products", require("./routes/bookRoutes"));
 app.use("/auth", require("./routes/authRoutes"));
